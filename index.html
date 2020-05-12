@@ -11,7 +11,7 @@
 
 </head>
 <body>
-
+    <main>
     <div class="container mt-4">
         <h1 class="display-4 text-center">
           <img src="./ahmemlak.png"> Müşteri<span class="text-primary"> Bilgileri</span></h1>
@@ -41,46 +41,27 @@
                 <input type="text" id="aciklama" class="form-control">
               </div>
               
-            <input type="submit" value="Müşteri Ekle" class="btn btn-primary btn-block">
+            <input id="addBtn" type="submit" value="Müşteri Ekle" class="btn btn-primary btn-block">
           </form>
+          <div class="table-responsive">
           <table class="table table-striped mt-5">
             <thead>
               <tr>
-                <th>İsim</th>
-                <th>Telefon Numarası</th>
-                <th>Kiralık/Satılık Bilgisi</th>
-                <th>Hangi Bölge</th>
-                <th>Bütçe</th>
-                <th>Açıklama</th>
-                <th></th>
+                <th scope="col">İsim</th>
+                <th scope="col">Telefon Numarası</th>
+                <th scope="col">Kiralık/Satılık Bilgisi</th>
+                <th scope="col">Hangi Bölge</th>
+                <th scope="col">Bütçe</th>
+                <th scope="col">Açıklama</th>
+                
               </tr>
             </thead>
             <tbody id="book-list"></tbody>
           </table>
       </div>
-        
+    </main>
       <!-- FIREBASE CONFIG-->
 
-      <!-- The core Firebase JS SDK is always required and must be listed first -->
-<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-
-<script>
-  // Your web app's Firebase configuration
-  var firebaseConfig = {
-    apiKey: "AIzaSyCT8BZM6JP5kFNMfdoL68-99kETquu00_M",
-    authDomain: "engin-emlak-database.firebaseapp.com",
-    databaseURL: "https://engin-emlak-database.firebaseio.com",
-    projectId: "engin-emlak-database",
-    storageBucket: "engin-emlak-database.appspot.com",
-    messagingSenderId: "773471657834",
-    appId: "1:773471657834:web:05b45cc99d2acadd910f13"
-  };
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-</script>
 
 </body>
 <script src='app.js'></script>

@@ -1,3 +1,5 @@
+
+
 // Musteri Class:
 class Book {
   constructor(isim, tlf, kisa, bolge, butce, aciklama) {
@@ -145,3 +147,5 @@ document.querySelector('#book-list').addEventListener('click', (e) => {
   // Show success message
   UI.showAlert('Müşteri Silindi', 'success');
 });
+  
+
