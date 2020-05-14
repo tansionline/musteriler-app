@@ -1,5 +1,3 @@
-
-
 // Musteri Class:
 class Book {
   constructor(isim, tlf, kisa, bolge, butce, aciklama) {

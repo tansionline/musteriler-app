@@ -62,7 +62,32 @@
     </main>
       <!-- FIREBASE CONFIG-->
 
+<!-- The core Firebase JS SDK is always required and must be listed first -->
+<script src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
 
+<!-- TODO: Add SDKs for Firebase products that you want to use
+// ...
+<script defer src="./init-firebase.js"></script>
+     https://firebase.google.com/docs/web/setup#available-libraries -->
+     <script defer src="https://www.gstatic.com/firebasejs/7.14.3/firebase-app.js"></script>
+
+     <script defer src="https://www.gstatic.com/firebasejs/7.14.3/firebase-auth.js"></script>
+     <script defer src="https://www.gstatic.com/firebasejs/7.14.3/firebase-firestore.js"></script>
+     
+<script>
+  // Your web app's Firebase configuration
+  var firebaseConfig = {
+    apiKey: "AIzaSyCT8BZM6JP5kFNMfdoL68-99kETquu00_M",
+    authDomain: "engin-emlak-database.firebaseapp.com",
+    databaseURL: "https://engin-emlak-database.firebaseio.com",
+    projectId: "engin-emlak-database",
+    storageBucket: "engin-emlak-database.appspot.com",
+    messagingSenderId: "773471657834",
+    appId: "1:773471657834:web:05b45cc99d2acadd910f13"
+  };
+  // Initialize Firebase
+  firebase.initializeApp(firebaseConfig);
+</script>
 </body>
 <script src='app.js'></script>
 </html>
